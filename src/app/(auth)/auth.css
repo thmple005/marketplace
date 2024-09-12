@@ -1,0 +1,112 @@
+.display-error{
+    color:red;
+  }
+
+  .enter-otp{
+    width:24% !important;
+  }
+  .otp-container{
+    justify-content: space-between;
+    margin-bottom:30px;
+  }
+  
+  
+/* Register Select Button */
+.register-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.register-button button {
+  padding: 6px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #5BBB7B;
+  color: #000;
+  border: 10px solid transparent;
+  border-image: linear-gradient(#fff, #fff) 30%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.register-button button.active {
+  background-color: WhiteSmoke;
+  color: black;
+  border-image: linear-gradient(#5BBB7B, #5BBB7B) 30%;
+}
+
+/* .register-button button:hover {
+  background-color: WhiteSmoke;
+  color: black;
+  border-image: linear-gradient(#5BBB7B, #5BBB7B) 30%;
+} */
+
+@media (max-width: 600px) {
+  .register-button {
+    flex-direction: column;
+  }
+
+  .register-button button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.box-container {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .box-container {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.is-active {
+  background-color: #f0f0f0;
+  border-color: #5BBB7B;
+}
+
+.btn-box-label h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn-box-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+}
+
+.btn-box-input {
+  display: none;
+}
